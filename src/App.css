@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Comfortaa";
+  width: 85%;
+  margin: 0 auto;
+  padding: 0px 0px 70px 0;
+}
+
+section {
+  margin: 50px 0;
+}
+
+header {
+  font-size: 50px;
+  font-weight: 700;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px 0;
+}
+
+.fj-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

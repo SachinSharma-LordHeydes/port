@@ -1,0 +1,36 @@
+.card-card-cointainer {
+  border-radius: 15px;
+  border: 2px solid white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 2    0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+:hover.card-card-cointainer {
+  transform: scale(1.05);
+  background: linear-gradient(256deg, #6a047f, #b702ee);
+}
+
+.card-card-index {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.card-card-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card-card-description {
+  font-size: 20px;
+}
+
+.card-read-more-cointainer {
+    margin-top: 5px;
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

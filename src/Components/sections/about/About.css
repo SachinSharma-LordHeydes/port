@@ -1,0 +1,78 @@
+/* .about-cointainer{
+    display: flex;
+} */
+
+.about-img-details-cointainer {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-details-cointainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  row-gap: 20px;
+  font-weight: 100;
+}
+
+.about-me-lone-girl-img {
+  width: 35%;
+}
+.about-table-cointainer {
+  margin: 20px 0;
+}
+.about-skill-table {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  gap: 5px;
+  justify-content: start;
+}
+.about-skill-name {
+  width: 40%;
+  font-weight: 600;
+}
+.about-skill-level-hr {
+  width: 60%;
+  background-color: rgb(173, 39, 218);
+  border-radius: 20px;
+  height: 10px;
+  border: none;
+}
+
+.about-achivement-table-cointainer {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+}
+
+.about-achivement-table {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.about-achivement-table-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-achivement-table-details-number{
+    font-size:35px;
+    font-weight: 600;
+}
+
+.about-achivement-table-details-name{
+    /* font-size:50px; */
+    font-weight: 600;
+}
+
+.about-achivement-table-pipe {
+  height: 100%;
+  width: 1px;
+  background-color: white;
+}

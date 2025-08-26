@@ -1,0 +1,48 @@
+.hero-my-resume-btn {
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 20px;
+  transition: 0.5s;
+  color: white;
+  border: 2px solid gray;
+  background-color: black;
+  transition: 0.5s;
+}
+
+:hover.hero-my-resume-btn {
+  transform: scale(1.05);
+}
+
+.hero-profile-video {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 290px;
+  height: 290px;
+  display: block;
+}
+
+.hero-profile-image {
+  border-radius: 100%;
+  text-align: center;
+}
+
+.hero-main-description {
+  margin-top: 25px;
+  font-size: 45px;
+  text-align: center;
+  width: 60%;
+  font-weight: 700;
+}
+
+.hero-supportive-description {
+  /* font-size: 15px; */
+  margin: 25px 0 15px;
+  text-align: center;
+  width: 50%;
+  font-weight: 300;
+}
+
+.hero-btn-cointainer {
+  margin-top: 20px;
+  gap: 9px;
+}
