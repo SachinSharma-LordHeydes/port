@@ -1,0 +1,15 @@
+.gradient-btn-class {
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 20px;
+  border: none;
+  /* background: linear-gradient(276deg, #940909, #332121); */
+  background: linear-gradient(256deg, #6a047f, #b702ee);
+  transition: 0.5s;
+  color: white;
+}
+
+:hover.gradient-btn-class {
+transform: scale(1.05);
+}
+

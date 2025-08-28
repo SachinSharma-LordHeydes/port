@@ -1,18 +1,3 @@
-.hero-my-resume-btn {
-  border-radius: 30px;
-  font-size: 15px;
-  padding: 20px;
-  transition: 0.5s;
-  color: white;
-  border: 2px solid gray;
-  background-color: black;
-  transition: 0.5s;
-}
-
-:hover.hero-my-resume-btn {
-  transform: scale(1.05);
-}
-
 .hero-profile-video {
   border-radius: 50%;
   object-fit: cover;
@@ -26,12 +11,21 @@
   text-align: center;
 }
 
-.hero-main-description {
+/* .hero-main-description {
   margin-top: 25px;
   font-size: 45px;
   text-align: center;
   width: 60%;
   font-weight: 700;
+} */
+.hero-main-description {
+  margin-top: 25px;
+  font-size: 45px;
+  text-align: center;
+  font-weight: 700;
+  width: 60%; /* Set to 60% width */
+  word-break: break-word; /* Allows text to break and wrap within the container */
+  overflow-wrap: break-word; /* Ensures long words break if necessary */
 }
 
 .hero-supportive-description {

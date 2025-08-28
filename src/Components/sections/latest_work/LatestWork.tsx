@@ -11,7 +11,7 @@ const LatestWork = () => {
         <WorkCardSection />
       </div>
       <div className="fj-center">
-        <button>
+        <button className="work-btn-cointainer fj-center">
           <div>Show More</div>
           <div><ArrowRight/></div>
         </button>

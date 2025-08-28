@@ -1,3 +1,4 @@
+import GridientBtn from "../ui/gridient-btn/GridientBtn";
 import "./Navbar.css"
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
         <li className="nav-list">Contact</li>
       </ul>
       <div>
-        <button className="nav-contact">Contact with me</button>
+        <GridientBtn>Contact with me</GridientBtn>
       </div>
     </div>
   );

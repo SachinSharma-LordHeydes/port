@@ -1,4 +1,7 @@
 import samurai_video from "../../../assets/video/Hình nền _Samurai Boss Fight Fantasy Dragon_ _ Live Wallpaper.mp4";
+import GridientBtn from "../../common/ui/gridient-btn/GridientBtn";
+import GridientText from "../../common/ui/gridient-text/GridientText";
+import PlaneBtn from "../../common/ui/plane-btn/PlaneBtn";
 import "./Hero.css";
 
 const Hero = () => {
@@ -18,8 +21,9 @@ const Hero = () => {
           ></video>
         </div>
         <div className="fj-center">
-          <h1 className="fj-center hero-main-description">
-            Hii I am Sachin , Full Stack Developer From Nepal
+          <h1 className=" hero-main-description">
+            <GridientText>Hii I am Sachin </GridientText>
+            <span>, Full Stack Developer From Nepal</span>
           </h1>
         </div>
         <div className="fj-center">
@@ -30,10 +34,12 @@ const Hero = () => {
         </div>
         <div className="fj-center hero-btn-cointainer">
           <div>
-            <button className="nav-contact">Contact with me</button>
+            {/* <button className="nav-contact">Contact with me</button> */}
+            <GridientBtn>Contact with me</GridientBtn>
           </div>
           <div>
-            <button className="hero-my-resume-btn">My Resume</button>
+            {/* <button className="hero-my-resume-btn">My Resume</button> */}
+            <PlaneBtn>My Resume</PlaneBtn>
           </div>
         </div>
       </div>

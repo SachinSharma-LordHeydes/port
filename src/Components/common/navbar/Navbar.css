@@ -10,19 +10,6 @@
   list-style: none;
   gap: 30px;
 }
-.nav-contact {
-  border-radius: 30px;
-  font-size: 15px;
-  border: none;
-  padding: 20px;
-  /* background: linear-gradient(276deg, #940909, #332121); */
-   background: linear-gradient(256deg, #6a047f, #b702ee);
-  transition: 0.5s;
-  color: white;
-}
-:hover.nav-contact {
-  transform: scale(1.05);
-}
 
 .nav-list {
   cursor: pointer;

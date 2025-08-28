@@ -1,4 +1,5 @@
 import lone_girl from "../../../assets/video/assassin-anime-girl-moewalls-com.mp4";
+import GridientText from "../../common/ui/gridient-text/GridientText";
 import "./About.css";
 const About = () => {
   const tableData = [
@@ -86,12 +87,18 @@ const About = () => {
         {achivementData.map((data, index) => (
           <div key={index} className="about-achivement-table">
             <div className="about-achivement-table-details">
-              <div className="about-achivement-table-details-number">{data.numbers}</div>
-              <div className="about-achivement-table-details">{data.achivements}</div>
+              <GridientText>
+                <div className="about-achivement-table-details-number">
+                  {data.numbers}
+                </div>{" "}
+              </GridientText>
+              <div className="about-achivement-table-details">
+                {data.achivements}
+              </div>
             </div>
-            
+
             <div>
-                {index <= 1 && <div className="about-achivement-table-pipe" />  }
+              {index <= 1 && <div className="about-achivement-table-pipe" />}
             </div>
           </div>
         ))}
