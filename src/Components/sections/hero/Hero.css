@@ -6,6 +6,27 @@
   display: block;
 }
 
+@media (max-width: 1200px) {
+  .hero-profile-video {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-profile-video {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-profile-video {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .hero-profile-image {
   border-radius: 100%;
   text-align: center;
@@ -28,6 +49,29 @@
   overflow-wrap: break-word; /* Ensures long words break if necessary */
 }
 
+@media (max-width: 1200px) {
+  .hero-main-description {
+    font-size: 40px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-main-description {
+    font-size: 32px;
+    width: 85%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-main-description {
+    font-size: 24px;
+    width: 95%;
+    margin-top: 15px;
+  }
+}
+
 .hero-supportive-description {
   /* font-size: 15px; */
   margin: 25px 0 15px;
@@ -36,7 +80,41 @@
   font-weight: 300;
 }
 
+@media (max-width: 1200px) {
+  .hero-supportive-description {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-supportive-description {
+    width: 80%;
+    margin: 20px 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-supportive-description {
+    width: 95%;
+    margin: 15px 0 10px;
+  }
+}
+
 .hero-btn-cointainer {
   margin-top: 20px;
   gap: 9px;
+}
+
+@media (max-width: 768px) {
+  .hero-btn-cointainer {
+    margin-top: 15px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-btn-cointainer {
+    margin-top: 12px;
+    gap: 6px;
+  }
 }

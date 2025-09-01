@@ -3,6 +3,16 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 5px;
+  padding: clamp(8px, 2vw, 15px) 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    position: relative;
+    flex-wrap: wrap;
+    padding: clamp(6px, 1.5vw, 12px) 0;
+  }
 }
 
 .nav-lists {
@@ -11,6 +21,119 @@
   gap: 30px;
 }
 
+@media (max-width: 1200px) {
+  .nav-lists {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-lists {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    gap: 15px;
+    padding: clamp(15px, 4vw, 25px);
+    border-radius: 15px;
+    margin-top: 10px;
+    z-index: 1000;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: slideDown 0.3s ease-out;
+  }
+
+  .nav-lists.active {
+    display: flex;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-lists {
+    gap: 12px;
+    padding: 15px;
+  }
+}
+
 .nav-list {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-list:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Mobile menu toggle button */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Logo/brand styling */
+.nav-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .nav-brand {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-brand {
+    font-size: 18px;
+  }
 }

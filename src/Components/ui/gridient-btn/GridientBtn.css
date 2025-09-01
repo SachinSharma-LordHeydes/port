@@ -1,0 +1,126 @@
+.gradient-btn {
+  background: linear-gradient(256deg, #6a047f, #b702ee);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 1200px) {
+  .gradient-btn {
+    padding: 11px 22px;
+    font-size: 15px;
+    border-radius: 23px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gradient-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 18px;
+    gap: 5px;
+  }
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(106, 4, 127, 0.4);
+}
+
+@media (max-width: 768px) {
+  .gradient-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(106, 4, 127, 0.4);
+  }
+}
+
+.gradient-btn:active {
+  transform: translateY(0);
+}
+
+.gradient-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.gradient-btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 768px) {
+  .gradient-btn-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-btn-icon {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Button variants */
+.gradient-btn-small {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .gradient-btn-small {
+    padding: 7px 14px;
+    font-size: 13px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-btn-small {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 16px;
+  }
+}
+
+.gradient-btn-large {
+  padding: 16px 32px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .gradient-btn-large {
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-btn-large {
+    padding: 12px 24px;
+    font-size: 15px;
+    border-radius: 22px;
+  }
+}

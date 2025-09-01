@@ -1,17 +1,51 @@
+import { useState } from "react";
 import GridientBtn from "../ui/gridient-btn/GridientBtn";
-import "./Navbar.css"
+import "./Navbar.css";
+
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <div className="nav-bar">
-      <div>Sachin</div>
-      <ul className="nav-lists">
-        <li className="nav-list">Home</li>
-        <li className="nav-list">About Me</li>
-        <li className="nav-list">Service</li>
-        <li className="nav-list">Portflio</li>
-        <li className="nav-list">Contact</li>
+      <div className="nav-brand">Sachin</div>
+
+      {/* Mobile menu toggle */}
+      <div
+        className={`mobile-menu-toggle ${isMobileMenuOpen ? "active" : ""}`}
+        onClick={toggleMobileMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul className={`nav-lists ${isMobileMenuOpen ? "active" : ""}`}>
+        <li className="nav-list" onClick={closeMobileMenu}>
+          Home
+        </li>
+        <li className="nav-list" onClick={closeMobileMenu}>
+          About Me
+        </li>
+        <li className="nav-list" onClick={closeMobileMenu}>
+          Service
+        </li>
+        <li className="nav-list" onClick={closeMobileMenu}>
+          Portfolio
+        </li>
+        <li className="nav-list" onClick={closeMobileMenu}>
+          Contact
+        </li>
       </ul>
-      <div>
+
+      <div className="hide-mobile">
         <GridientBtn>Contact with me</GridientBtn>
       </div>
     </div>

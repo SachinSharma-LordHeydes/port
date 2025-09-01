@@ -9,6 +9,19 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .about-img-details-cointainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-img-details-cointainer {
+    gap: 20px;
+  }
+}
+
 .about-details-cointainer {
   display: flex;
   flex-direction: column;
@@ -17,12 +30,45 @@
   font-weight: 100;
 }
 
+@media (max-width: 768px) {
+  .about-details-cointainer {
+    width: 100%;
+    row-gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-details-cointainer {
+    row-gap: 12px;
+  }
+}
+
 .about-me-lone-girl-img {
   width: 35%;
 }
+
+@media (max-width: 768px) {
+  .about-me-lone-girl-img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-lone-girl-img {
+    width: 80%;
+  }
+}
+
 .about-table-cointainer {
   margin: 20px 0;
 }
+
+@media (max-width: 768px) {
+  .about-table-cointainer {
+    margin: 15px 0;
+  }
+}
+
 .about-skill-table {
   display: flex;
   margin-top: 15px;
@@ -30,10 +76,24 @@
   gap: 5px;
   justify-content: start;
 }
+
+@media (max-width: 480px) {
+  .about-skill-table {
+    gap: 8px;
+  }
+}
+
 .about-skill-name {
   width: 40%;
   font-weight: 600;
 }
+
+@media (max-width: 480px) {
+  .about-skill-name {
+    width: 50%;
+  }
+}
+
 .about-skill-level-hr {
   width: 60%;
   background-color: rgb(173, 39, 218);
@@ -42,16 +102,47 @@
   border: none;
 }
 
+@media (max-width: 480px) {
+  .about-skill-level-hr {
+    width: 50%;
+  }
+}
+
 .about-achivement-table-cointainer {
   margin-top: 60px;
   display: flex;
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .about-achivement-table-cointainer {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-achivement-table-cointainer {
+    margin-top: 30px;
+  }
+}
+
 .about-achivement-table {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-achivement-table {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-achivement-table {
+    gap: 15px;
+  }
 }
 
 .about-achivement-table-details {
@@ -61,18 +152,48 @@
   align-items: center;
 }
 
-.about-achivement-table-details-number{
-    font-size:35px;
-    font-weight: 600;
+.about-achivement-table-details-number {
+  font-size: 35px;
+  font-weight: 600;
 }
 
-.about-achivement-table-details-name{
-    /* font-size:50px; */
-    font-weight: 600;
+@media (max-width: 768px) {
+  .about-achivement-table-details-number {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-achivement-table-details-number {
+    font-size: 24px;
+  }
+}
+
+.about-achivement-table-details-name {
+  /* font-size:50px; */
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .about-achivement-table-details-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-achivement-table-details-name {
+    font-size: 12px;
+  }
 }
 
 .about-achivement-table-pipe {
   height: 100%;
   width: 1px;
   background-color: white;
+}
+
+@media (max-width: 768px) {
+  .about-achivement-table-pipe {
+    display: none;
+  }
 }

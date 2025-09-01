@@ -1,5 +1,6 @@
 import { LocationEdit, Mail, Phone } from "lucide-react";
 import GridientBtn from "../../common/ui/gridient-btn/GridientBtn";
+import GridientText from "../../common/ui/gridient-text/GridientText";
 import "./GetInTouch.css";
 
 const GetInTouch = () => {
@@ -40,8 +41,8 @@ const GetInTouch = () => {
         label: "Write your message here",
         type: "text",
         placeholder: "Enter your message",
-        rows: 15,
-        cols: 15,
+        rows: 10,
+        cols: 10,
         id: "message",
         name: "message",
       },
@@ -51,18 +52,20 @@ const GetInTouch = () => {
   return (
     <section>
       <header>Get in touch</header>
-      <div className="fj-center">
+      <div className=" get-in-touch-cointainer">
         {/* about contact section  */}
-        <div>
-          <div>Let's talk</div>
-          <div>
+        <div className="get-in-touch-text-area-cointainer">
+          <GridientText>
+            <div className="get-in-touch-text-area-header">Let's talk</div>
+          </GridientText>
+          <div className="get-in-touch-text-area-description">
             I'm currently avaliable to take on new projects, so feel free to
             send me a message about anything that you want me to work on. You
             can contact anytime.
           </div>
-          <div>
+          <div className="get-in-touch-text-area-details-cointainer">
             {contact.map((data, index) => (
-              <div key={index}>
+              <div key={index} className="">
                 <div>{data.logo}</div>
                 <div>{data.description}</div>
               </div>
@@ -71,14 +74,20 @@ const GetInTouch = () => {
         </div>
 
         {/* form fill up section  */}
-        <div>
+        <div className="get-in-touch-form-area-cointainer">
           {/* inputfields  */}
 
-          <div>
+          <div className="get-in-touch-form-area-input-cointainer">
             {formSections?.input?.map((data, index) => (
               <div key={index}>
-                <label htmlFor={data.name}>{data.label}</label>
+                <label
+                  className="get-in-touch-form-area-input-label-cointainer"
+                  htmlFor={data.name}
+                >
+                  {data.label}
+                </label>
                 <input
+                  className="get-in-touch-form-area-input-field-cointainer"
                   type={data.type}
                   placeholder={data.placeholder}
                   id={data.id}
@@ -88,8 +97,14 @@ const GetInTouch = () => {
             ))}
             {formSections?.textarea?.map((data, index) => (
               <div key={index}>
-                <label htmlFor={data.name}>{data.label}</label>
+                <label
+                  className="get-in-touch-form-area-input-label-cointainer"
+                  htmlFor={data.name}
+                >
+                  {data.label}
+                </label>
                 <textarea
+                  className="get-in-touch-form-area-textarea-field-cointainer"
                   placeholder={data.placeholder}
                   id={data.id}
                   name={data.name}
@@ -100,7 +115,7 @@ const GetInTouch = () => {
             ))}
           </div>
           {/* submit btn */}
-          <div>
+          <div className="get-in-touch-btn">
             {/* <button>submit now</button> */}
             <GridientBtn>Submit Now</GridientBtn>
           </div>
