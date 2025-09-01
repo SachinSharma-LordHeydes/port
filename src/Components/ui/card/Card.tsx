@@ -1,7 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import GridientText from "../../common/ui/gridient-text/GridientText";
 import "./Card.css";
-const Card = ({ data, index }) => {
+import type { ICardDeaatils } from "../card_sections/CardSection";
+const Card = ({ data, index }:{ data:ICardDeaatils, index:number }) => {
   return (
     <div className="card-card-cointainer">
       <div className="card-card-index">0{index}</div>

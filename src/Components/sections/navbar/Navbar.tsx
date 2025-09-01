@@ -1,6 +1,6 @@
 import { useState } from "react";
-import GridientBtn from "../ui/gridient-btn/GridientBtn";
 import "./Navbar.css";
+import GridientBtn from "../../common/ui/gridient-btn/GridientBtn";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

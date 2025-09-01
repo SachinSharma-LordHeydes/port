@@ -2,7 +2,15 @@ import lone_girl from "../../../assets/video/assassin-anime-girl-moewalls-com.mp
 import GridientText from "../../common/ui/gridient-text/GridientText";
 import "./About.css";
 const About = () => {
-  const tableData = [
+  interface ITableData {
+    name: string;
+    value: string;
+  }
+  interface IAchivementData {
+    achivements: string;
+    numbers: string;
+  }
+  const tableData: ITableData[] = [
     {
       name: "HTML , CSS & Tailwind",
       value: "50%",
@@ -25,7 +33,7 @@ const About = () => {
     },
   ];
 
-  const achivementData = [
+  const achivementData: IAchivementData[] = [
     {
       achivements: "YEARS OF EXPERIENCE",
       numbers: "10+",
@@ -60,7 +68,7 @@ const About = () => {
               bring to each project.
             </p>
             <div className="about-table-cointainer">
-              {tableData.map((data, index: number) => (
+              {tableData.map((data: ITableData, index: number) => (
                 <div key={index} className="about-skill-table">
                   <div className="about-skill-name">{data.name}</div>
                   <hr
@@ -84,7 +92,7 @@ const About = () => {
         </div>
       </div>
       <div className="about-achivement-table-cointainer">
-        {achivementData.map((data, index) => (
+        {achivementData.map((data:IAchivementData, index:number) => (
           <div key={index} className="about-achivement-table">
             <div className="about-achivement-table-details">
               <GridientText>

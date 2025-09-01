@@ -1,9 +1,12 @@
 import samurai from "../../../assets/Screenshot 2025-08-25 081920.png";
 import WorkCard from "../work_card/WorkCard";
 import "./WorkCardSection.css";
-
+export interface IWorkCardDetails{
+  id:number;
+  src:string
+}
 const WorkCardSection = () => {
-  const workCardDetails = [
+  const workCardDetails:IWorkCardDetails[] = [
     {
       id: 1,
       src: samurai,
@@ -31,9 +34,9 @@ const WorkCardSection = () => {
   ];
   return (
     <div className="work-card-section-card-cointainer">
-      {workCardDetails.map((data, index: number) => (
+      {workCardDetails.map((data:IWorkCardDetails, index: number) => (
         <div key={index}>
-          <WorkCard data={data} index={index + 1} />
+          <WorkCard data={data}  />
         </div>
       ))}
     </div>

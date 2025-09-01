@@ -2,9 +2,34 @@ import { LocationEdit, Mail, Phone } from "lucide-react";
 import GridientBtn from "../../common/ui/gridient-btn/GridientBtn";
 import GridientText from "../../common/ui/gridient-text/GridientText";
 import "./GetInTouch.css";
+interface IContact {
+  logo: React.ReactNode;
+  description: string;
+}
+interface IInput {
+  label: string;
+  type: string;
+  placeholder: string;
+  id: string;
+  name: string;
+}
 
+interface ITextArea {
+  label: string;
+  type: string;
+  placeholder: string;
+  rows: number;
+  cols: number;
+  id: string;
+  name: string;
+}
+
+interface IFormSection {
+  input: IInput[];
+  textarea: ITextArea[];
+}
 const GetInTouch = () => {
-  const contact = [
+  const contact: IContact[] = [
     {
       logo: <Mail />,
       description: "mailitttome@gmail.com",
@@ -19,7 +44,7 @@ const GetInTouch = () => {
     },
   ];
 
-  const formSections = {
+  const formSections:IFormSection = {
     input: [
       {
         label: "Your Name",
@@ -64,7 +89,7 @@ const GetInTouch = () => {
             can contact anytime.
           </div>
           <div className="get-in-touch-text-area-details-cointainer">
-            {contact.map((data, index) => (
+            {contact.map((data: IContact, index: number) => (
               <div key={index} className="">
                 <div>{data.logo}</div>
                 <div>{data.description}</div>
@@ -78,7 +103,7 @@ const GetInTouch = () => {
           {/* inputfields  */}
 
           <div className="get-in-touch-form-area-input-cointainer">
-            {formSections?.input?.map((data, index) => (
+            {formSections?.input?.map((data:IInput, index:number) => (
               <div key={index}>
                 <label
                   className="get-in-touch-form-area-input-label-cointainer"
@@ -95,7 +120,7 @@ const GetInTouch = () => {
                 />
               </div>
             ))}
-            {formSections?.textarea?.map((data, index) => (
+            {formSections?.textarea?.map((data:ITextArea, index:number) => (
               <div key={index}>
                 <label
                   className="get-in-touch-form-area-input-label-cointainer"

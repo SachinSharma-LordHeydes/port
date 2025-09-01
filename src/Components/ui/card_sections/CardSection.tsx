@@ -1,8 +1,11 @@
 import Card from "../card/Card";
-import "./CardSection.css"
-
+import "./CardSection.css";
+export interface ICardDeaatils {
+  title: string;
+  description: string;
+}
 const CardSection = () => {
-  const cardDeaatils = [
+  const cardDeaatils: ICardDeaatils[] = [
     {
       title: "Web design",
       description: "Web development is the process of building, programming...",
@@ -30,9 +33,9 @@ const CardSection = () => {
   ];
   return (
     <div className="card-section-card-cointainer">
-      {cardDeaatils.map((data, index: number) => (
+      {cardDeaatils.map((data:ICardDeaatils, index: number) => (
         <div key={index}>
-          <Card data={data} index={index+1}/>
+          <Card data={data} index={index + 1} />
         </div>
       ))}
     </div>
