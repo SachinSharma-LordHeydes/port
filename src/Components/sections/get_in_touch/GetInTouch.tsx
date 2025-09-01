@@ -42,7 +42,7 @@ const sendMail = async (
   console.log("event,", event.target);
   const formData = new FormData(event.currentTarget);
 
-  formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+  formData.append("access_key", import.meta.env.VITE_API_WEB3_FORM_API);
 
   const response = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
