@@ -1,9 +1,7 @@
-import samurai_video from "../../../assets/video/Hình nền _Samurai Boss Fight Fantasy Dragon_ _ Live Wallpaper.mp4";
 import GridientBtn from "../../common/ui/gridient-btn/GridientBtn";
 import GridientText from "../../common/ui/gridient-text/GridientText";
 import PlaneBtn from "../../common/ui/plane-btn/PlaneBtn";
 import "./Hero.css";
-
 const Hero = () => {
   return (
     <section className="fj-center">
@@ -11,7 +9,7 @@ const Hero = () => {
         <div className="fj-center">
           <video
             className="hero-profile-video "
-            src={samurai_video}
+            src={import.meta.env.VITE_API_SAMURAI_VIDEO}
             height={290}
             width={290}
             muted

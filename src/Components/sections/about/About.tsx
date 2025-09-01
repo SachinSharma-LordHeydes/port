@@ -1,4 +1,3 @@
-import lone_girl from "../../../assets/video/assassin-anime-girl-moewalls-com.mp4";
 import GridientText from "../../common/ui/gridient-text/GridientText";
 import "./About.css";
 const About = () => {
@@ -81,7 +80,7 @@ const About = () => {
           </div>
           <video
             className="about-me-lone-girl-img"
-            src={lone_girl}
+            src={import.meta.env.VITE_API_LONE_GIRL}
             height={290}
             width={290}
             muted
