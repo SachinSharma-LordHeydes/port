@@ -94,7 +94,6 @@
   }
 }
 
-/* Gradient text with different gradients */
 .gradient-text-blue {
   background: linear-gradient(256deg, #0066cc, #0099ff);
   -webkit-background-clip: text;
@@ -116,7 +115,6 @@
   background-clip: text;
 }
 
-/* Responsive line height */
 .gradient-text {
   line-height: 1.2;
 }

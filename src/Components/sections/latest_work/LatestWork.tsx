@@ -3,7 +3,7 @@ import WorkCardSection from "../../ui/work_card_section/WorkCardSection";
 import "./LatestWork.css";
 const LatestWork = () => {
   return (
-    <section>
+    <section id="latest_work">
       <div>
         <header>My latest work</header>
       </div>

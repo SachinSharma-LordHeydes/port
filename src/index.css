@@ -41,7 +41,6 @@ body {
   }
 }
 
-/* Responsive grid utilities */
 .grid {
   display: grid;
   gap: 20px;
@@ -80,7 +79,6 @@ body {
   }
 }
 
-/* Responsive flexbox utilities */
 .flex {
   display: flex;
 }
@@ -132,7 +130,6 @@ body {
   }
 }
 
-/* Responsive text utilities */
 .text-center {
   text-align: center;
 }
@@ -151,7 +148,6 @@ body {
   }
 }
 
-/* Responsive spacing utilities */
 .mt-sm {
   margin-top: 10px;
 }
@@ -233,7 +229,6 @@ body {
   }
 }
 
-/* Hide/show utilities for responsive design */
 .hide-mobile {
   display: block;
 }
@@ -288,24 +283,20 @@ body {
   }
 }
 
-/* Responsive image handling */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
-/* Focus styles for accessibility */
 *:focus {
   outline: 2px solid #b702ee;
   outline-offset: 2px;
 }
 
-/* Selection styles */
 ::selection {
   background-color: rgba(106, 4, 127, 0.3);
   color: white;

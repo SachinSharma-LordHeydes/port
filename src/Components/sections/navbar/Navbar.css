@@ -21,6 +21,12 @@
   gap: 30px;
 }
 
+.anchor-link{
+  text-decoration: none;
+  color: white;
+  border: none;
+}
+
 @media (max-width: 1200px) {
   .nav-lists {
     gap: 25px;
@@ -86,7 +92,6 @@
   }
 }
 
-/* Mobile menu toggle button */
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -120,7 +125,6 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Logo/brand styling */
 .nav-brand {
   font-size: 24px;
   font-weight: bold;

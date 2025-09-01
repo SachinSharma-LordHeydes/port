@@ -10,7 +10,10 @@ body {
   /* padding: 0px 0px 70px 0; */
 }
 
-/* Responsive breakpoints */
+.anchor-link:focus {
+  outline: none;
+}
+
 @media (max-width: 1200px) {
   body {
     width: clamp(92%, 90%, 90%);

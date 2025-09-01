@@ -1,10 +1,11 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import GridientBtn from "../../common/ui/gridient-btn/GridientBtn";
 import GridientText from "../../common/ui/gridient-text/GridientText";
 import PlaneBtn from "../../common/ui/plane-btn/PlaneBtn";
 import "./Hero.css";
 const Hero = () => {
   return (
-    <section className="fj-center">
+    <section id="hero" className="fj-center">
       <div>
         <div className="fj-center">
           <video
@@ -33,7 +34,12 @@ const Hero = () => {
         <div className="fj-center hero-btn-cointainer">
           <div>
             {/* <button className="nav-contact">Contact with me</button> */}
-            <GridientBtn>Contact with me</GridientBtn>
+            <GridientBtn>
+              {" "}
+              <AnchorLink className="anchor-link" href="#get_in_touch">
+                Contact with me
+              </AnchorLink>
+            </GridientBtn>
           </div>
           <div>
             {/* <button className="hero-my-resume-btn">My Resume</button> */}

@@ -48,7 +48,7 @@ const About = () => {
   ];
 
   return (
-    <div>
+    <div id="about">
       <header>About me</header>
       <div className="about-cointainer">
         <div className="about-img-details-cointainer">

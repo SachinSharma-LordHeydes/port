@@ -1,6 +1,7 @@
 import { useState } from "react";
-import "./Navbar.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import GridientBtn from "../../common/ui/gridient-btn/GridientBtn";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,7 +18,6 @@ const Navbar = () => {
     <div className="nav-bar">
       <div className="nav-brand">Sachin</div>
 
-      {/* Mobile menu toggle */}
       <div
         className={`mobile-menu-toggle ${isMobileMenuOpen ? "active" : ""}`}
         onClick={toggleMobileMenu}
@@ -29,24 +29,39 @@ const Navbar = () => {
 
       <ul className={`nav-lists ${isMobileMenuOpen ? "active" : ""}`}>
         <li className="nav-list" onClick={closeMobileMenu}>
-          Home
+          <AnchorLink className="anchor-link" href="#hero">
+            Home
+          </AnchorLink>
         </li>
         <li className="nav-list" onClick={closeMobileMenu}>
-          About Me
+          <AnchorLink className="anchor-link" href="#about">
+            About Me
+          </AnchorLink>
         </li>
         <li className="nav-list" onClick={closeMobileMenu}>
-          Service
+          <AnchorLink className="anchor-link" href="#services">
+            Service
+          </AnchorLink>
         </li>
         <li className="nav-list" onClick={closeMobileMenu}>
-          Portfolio
+          <AnchorLink className="anchor-link" href="#latest_work">
+            {" "}
+            Portfolio
+          </AnchorLink>
         </li>
         <li className="nav-list" onClick={closeMobileMenu}>
-          Contact
+          <AnchorLink className="anchor-link" href="#get_in_touch">
+            Contact
+          </AnchorLink>
         </li>
       </ul>
 
       <div className="hide-mobile">
-        <GridientBtn>Contact with me</GridientBtn>
+        <GridientBtn>
+          <AnchorLink className="anchor-link" href="#get_in_touch">
+            Contact with me
+          </AnchorLink>
+        </GridientBtn>
       </div>
     </div>
   );
